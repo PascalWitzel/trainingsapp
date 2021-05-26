@@ -7,7 +7,13 @@ class HScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/fittness.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column (
           children: [
             Padding(
@@ -47,7 +53,6 @@ class HScreen extends StatelessWidget {
           ],
         ),
       ),
-
     );
   }
 }
