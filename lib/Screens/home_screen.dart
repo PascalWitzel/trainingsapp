@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
             KampfsportScreen(),
             FitnessScreen(),
             YogaScreen(),
-            TestScreen(),
+                TestScreen(),
           ],
         ),
       ),

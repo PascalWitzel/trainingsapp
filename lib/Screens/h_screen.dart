@@ -10,7 +10,7 @@ class HScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/fittness.jpg"),
+            image: AssetImage("assets/images/seilspringen.jpeg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -19,8 +19,8 @@ class HScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: Container(
-                child: Placeholder(
-                  fallbackHeight: 80,
+                child: Text(
+                  "Willkommen zu deiner Trainingsapp!"
                 ),
               ),
             ),
@@ -29,26 +29,28 @@ class HScreen extends StatelessWidget {
               padding: const EdgeInsets.all(10),
               child: Container(
                 child: Placeholder(
-                  fallbackHeight: 280,
+                  fallbackHeight: 150,
+                  fallbackWidth: 150,
                 ),
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  child: Placeholder(
-                    fallbackHeight: 200,
-                    fallbackWidth: 150,
-                  ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Container(
+                child: Placeholder(
+                  fallbackHeight: 150,
+                  fallbackWidth: 150,
                 ),
-                Container(
-                  child: Placeholder(
-                    fallbackHeight: 200,
-                    fallbackWidth: 150,
-                  ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Container(
+                child: Placeholder(
+                  fallbackHeight: 150,
+                  fallbackWidth: 150,
                 ),
-              ],
+              ),
             ),
           ],
         ),
