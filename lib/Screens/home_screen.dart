@@ -3,7 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:trainingsapp/Screens/fitness_screen.dart';
 import 'package:trainingsapp/Screens/h_screen.dart';
 import 'package:trainingsapp/Screens/kampfsport_screen.dart';
-import 'package:trainingsapp/Screens/test_screen.dart';
 import 'package:trainingsapp/Screens/yoga_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 5,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           title: Text("Deine Workout Bib"),
@@ -45,12 +44,6 @@ class HomeScreen extends StatelessWidget {
                   text: "Yoga",
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Tab(
-                  text: "Test",
-                ),
-              ),
             ],
           ),
         ),
@@ -60,7 +53,6 @@ class HomeScreen extends StatelessWidget {
             KampfsportScreen(),
             FitnessScreen(),
             YogaScreen(),
-                TestScreen(),
           ],
         ),
       ),

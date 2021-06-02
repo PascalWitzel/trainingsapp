@@ -8,9 +8,11 @@ class YogaScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
+          color: Colors.grey,
           image: DecorationImage(
-            image: AssetImage("assets/images/yoga.jpg"),
             fit: BoxFit.cover,
+            colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.3), BlendMode.dstATop),
+            image: AssetImage("assets/images/yoga.jpg"),
           ),
         ),
         child: Column (
